@@ -1,0 +1,13 @@
+/* In your stylesheet or in a style block in your component */
+.custom-list-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-list-style li::before {
+  content: "•";
+  color: #e4a11b;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

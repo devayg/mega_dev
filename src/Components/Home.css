@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 56.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 768px) {
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 150.25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow-x: hidden;
+  }
+  .banner-text {
+    z-index: 1;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-family: "Merianda";
+    color: white;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 70.25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .banner-text {
+    z-index: 1;
+    font-size: 2em;
+    line-height: 65px;
+    margin-bottom: 5%;
+    font-family: "Merianda";
+    color: white;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 996px) and (max-width: 1500px) {
+  .banner-text {
+    z-index: 1;
+    font-size: 2em;
+    line-height: 60px;
+    margin-bottom: 15%;
+    font-family: "Merianda";
+    color: white;
+    text-align: center;
+  }
+}
+/* ---------- Animation --------------- */
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-left: 3em;
+  }
+  100% {
+    opacity: 1;
+  }
+}
